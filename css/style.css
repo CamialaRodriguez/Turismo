@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: url("../img/bg-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    
+}
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+nav li a:hover{
+    border-bottom:  2px solid #fff;
+    border-top: 2px solid #fff;
+}
+#logo img{
+    transition: .5s;
+}
+#logo img:hover{
+    transform: scale(1.1);
+}
+#hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:200px ; 
+}
+
+#hero h1{
+    font-size: 60px;
+    color: yellow;
+
+}
+
+#hero h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+
+#hero button{
+    background: rgb(240, 52, 52);
+    font-size: 30px;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: #ffffff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#hero button:hover{
+    transform: scale(0.9);
+    background: #552424;
+}
+main{
+    width: 100%;
+    position: relative;
+
+}
+/* estilo de descripcion */
+#acerca {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#acerca h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#acerca .fila {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#acerca .colom-info {
+    text-align: center;
+}
+
+#acerca .colom-info img {
+    display: block;
+    margin: 0 auto; 
+}
+
+#acerca .colom-info h3 {
+    position: absolute;
+    top: 410px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+
+}
+
+#acerca .colom-info p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#acerca .colom-info img{
+    width: 330px;
+    height: 329px;
+    transition: .4s;
+    margin-bottom: 40px;
+}
+
+#acerca .colom-info img:hover{
+    border-radius: 50%;
+}
+/* Estilos planes */
+
+#planes{
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+#planes h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#planes p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#planes .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-evenly;
+}
+#planes .planes-col h3{
+    text-align: center;
+    color: black;
+}
+#planes .planes-col img{
+    width: 230px;
+    height: 229px;
+    transition: .4s;
+    margin-bottom: 40px;
+}
+#planes .planes-col img:hover{
+    transform: scale(1.1);
+}
+#destinos{
+    width: 100%;
+    background: url("../img/bg-destinos.jpg");
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+#destinos h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#destinos p{
+    font-size: 25px;
+}
+#destinos .fila2{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+#destinos .destinos-col{
+    position: relative;
+}
+#destinos .destinos-col h3{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+#destinos .destinos-col img{
+    width: 359px;
+    height: 358px;
+    transition: .5s;
+}
+#destinos .destinos-col img:hover{
+    border-radius: 55% / 25%;
+}
+/* Estilos para lo mas vendido */
+#vendido{
+    width: 100%;
+    background: url("../img/cocora.jpg");
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+#vendido h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#vendido p{
+    font-size: 25px;
+}
+#vendido .fila3{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+#vendido .vendidos-col{
+    position: relative;
+}
+
+#vendido .vendidos-col h3{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(253, 253, 253);
+}
+#vendido .vendidos-col img{
+    transition: .5s;
+}
+#vendido .vendidos-col img:hover{
+    transform: rotate(90deg);
+}
+/* Estilos para la actividades */
+#actividades{
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    text-align: center;
+}
+
+#actividades h2{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#actividades .fila4{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-evenly;
+
+}
+#actividades .actividad-col h3{
+    text-align: center;
+    color: black;
+}
+#actividades .actividad-col img{
+    width: 230px;
+    height: 229px;
+    transition: .4s;
+}
+#actividades .actividad-col img:hover{
+    transform: translateY(-20px);
+}
+#actividades p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+/* Estilos del formulario */
+#contacto{
+    width: 100%;
+    position: relative;
+    background: rgb(125, 195, 212);
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+#contacto h2{
+    font-size: 50px;
+}
+
+#contacto p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#contacto form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#contacto .fila5{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contacto input,
+#contacto select{
+    width: 48%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+
+#contacto button{
+    background: #e9f176;
+    color: #fff;
+    font-size: 25px;
+    padding: 6px 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+    border-color: transparent;
+}
+
+
+footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 15px; 
+    padding: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    header nav{
+        display: block;
+        text-align: center;
+        width: 96%;
+    }
+    header nav ul{
+        margin-top: 30px;
+    }
+    nav li a{
+        font-size: 20px;
+    }
+    #hero h2{
+        font-size: 36px;
+    }
+    #hero h1{
+        font-size: 26px;
+    }
+    #hero button{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+    #planes .fila{
+        display: block;
+    }
+    #planes h2{
+        font-size: 36px;
+    }
+    #planes p{
+        font-size: 16px;
+    }
+    #planes .col-plan{
+        margin-bottom: 30px;
+    }
+    #destinos .fila2{
+        display: block;
+    }
+    #vendido .fila3{
+        display: block;
+    }
+    #actividades .fila4{
+        display: block;
+    }
+
+    #contacto .fila5{
+        display: block;
+    }
+    #contacto input,
+    #contacto select{
+        width: 100%;
+        display: block;
+    }
+}
